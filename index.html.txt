@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>Paws and Claws | كفوف و مخالب</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Paws and Claws | كفوف و مخالب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- إذا كان ملف CSS غير متوفر يمكنك حذف السطر التالي مؤقتاً -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
@@ -14,12 +15,12 @@
 </header>
 
 <section class="categories">
-  <a href="#">Dry Food Dog</a>
-  <a href="#">Dry Food Cat</a>
-  <a href="#">Wet Food Dog</a>
-  <a href="#">Wet Food Cat</a>
-  <a href="#">Accessories</a>
-  <a href="#">Pharma Pets</a>
+  <a href="#">طعام جاف للكلاب</a>
+  <a href="#">طعام جاف للقطط</a>
+  <a href="#">طعام رطب لل��لاب</a>
+  <a href="#">طعام رطب للقطط</a>
+  <a href="#">اكسسوارات</a>
+  <a href="#">أدوية و رعاية</a>
 </section>
 
 <section class="contact">
