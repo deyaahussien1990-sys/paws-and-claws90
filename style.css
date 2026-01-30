@@ -8,7 +8,7 @@ body {
 
 /* ===== Header ===== */
 header {
-  background: #ff9acb;  /* زهري فاتح */
+  background: #ffb6d9
   color: #ffffff;
   padding: 25px 10px;
 }
@@ -87,5 +87,6 @@ footer {
   background: #ffe4ec;
   font-size: 14px;
 }
+
 
 
