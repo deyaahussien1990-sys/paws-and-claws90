@@ -6,10 +6,21 @@ body {
   text-align: center;
 }
 
+/* ===== Header ===== */
 header {
   background: #ff69b4;
   color: white;
   padding: 25px 10px;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 header h1 {
@@ -22,6 +33,7 @@ header p {
   font-size: 18px;
 }
 
+/* ===== Categories ===== */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -45,6 +57,7 @@ header p {
   color: white;
 }
 
+/* ===== Contact ===== */
 .contact {
   margin: 20px;
 }
@@ -52,26 +65,26 @@ header p {
 .contact a {
   display: inline-block;
   margin: 10px;
-  padding: 15px 25px;
-  border-radius: 30px;
-  color: white;
-  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 25px;
   text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
 .whatsapp {
-  background: #25d366;
+  background: #25D366;
 }
 
 .instagram {
-  background: #e1306c;
+  background: #E1306C;
 }
 
+/* ===== Footer ===== */
 footer {
-  background: #ffe4ec;
-  padding: 15px;
   margin-top: 30px;
+  padding: 15px;
+  background: #ffe4ec;
   font-size: 14px;
 }
 
