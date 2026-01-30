@@ -1,87 +1,35 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <title>Paws & Claws | كفوف ومخالب</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Paws and Claws | كفوف و مخالب</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>🐾 Paws & Claws</h1>
-        <h3>كفوف ومخالب</h3>
-        <p>متجر مستلزمات الحيوانات الأليفة – عمّان، الأردن</p>
-        <div class="social-buttons">
-            <a class="whatsapp" href="https://wa.me/962792089871" target="_blank">💬 اطلب عبر واتساب</a>
-            <a class="instagram" href="https://www.instagram.com/pawsandclaws.jo" target="_blank">📸 إنستغرام</a>
-        </div>
-    </header>
 
-    <section class="about">
-        <h2>من نحن</h2>
-        <p>
-            Paws & Claws (كفوف ومخالب) متجر متخصص في مستلزمات الحيوانات الأليفة.
-            اطلب منتجاتك بسهولة عبر واتساب وسنقوم بالتوصيل داخل عمّان.
-        </p>
-    </section>
+<header>
+  <h1>Paws and Claws 🐾</h1>
+  <p>كفوف و مخالب – عمان، الأردن</p>
+</header>
 
-    <section class="products">
-        <h2>🐶 Dry Food – Dogs</h2>
-        <div class="product-card">
-            <h3>Royal Canin Adult Dog</h3>
-            <p>طعام جاف للكلاب – وزن 3 كغ</p>
-            <a href="https://wa.me/962792089871?text=مرحبا، بدي أطلب Royal Canin Adult Dog من Paws & Claws" target="_blank">
-                اطلب الآن
-            </a>
-        </div>
+<section class="categories">
+  <a href="#">Dry Food Dog</a>
+  <a href="#">Dry Food Cat</a>
+  <a href="#">Wet Food Dog</a>
+  <a href="#">Wet Food Cat</a>
+  <a href="#">Accessories</a>
+  <a href="#">Pharma Pets</a>
+</section>
 
-        <h2>🐱 Dry Food – Cats</h2>
-        <div class="product-card">
-            <h3>Royal Canin Adult Cat</h3>
-            <p>طعام جاف للقطط – وزن 2 كغ</p>
-            <a href="https://wa.me/962792089871?text=مرحبا، بدي أطلب Royal Canin Adult Cat من Paws & Claws" target="_blank">
-                اطلب الآن
-            </a>
-        </div>
+<section class="contact">
+  <a class="whatsapp" href="https://wa.me/962792089871" target="_blank">اطلب عبر واتساب</a>
+  <a class="instagram" href="https://www.instagram.com/pawsandclaws.jo" target="_blank">إنستغرام</a>
+</section>
 
-        <h2>🐶 Wet Food – Dogs</h2>
-        <div class="product-card">
-            <h3>Pedigree Wet Food</h3>
-            <p>طعام رطب للكلاب – نكهة لحم</p>
-            <a href="https://wa.me/962792089871?text=مرحبا، بدي أطلب Pedigree Wet Food Dog من Paws & Claws" target="_blank">
-                اطلب الآن
-            </a>
-        </div>
+<footer>
+  <p>© 2026 Paws and Claws</p>
+</footer>
 
-        <h2>🐱 Wet Food – Cats</h2>
-        <div class="product-card">
-            <h3>Whiskas Wet Food</h3>
-            <p>طعام رطب للقطط – نكهة دجاج</p>
-            <a href="https://wa.me/962792089871?text=مرحبا، بدي أطلب Whiskas Wet Food Cat من Paws & Claws" target="_blank">
-                اطلب الآن
-            </a>
-        </div>
-
-        <h2>🧸 Accessories</h2>
-        <div class="product-card">
-            <h3>Dog Leash</h3>
-            <p>مقود كلاب متين – ألوان متعددة</p>
-            <a href="https://wa.me/962792089871?text=مرحبا، بدي أطلب Dog Leash من Paws & Claws" target="_blank">
-                اطلب الآن
-            </a>
-        </div>
-
-        <h2>💊 Pharma Pets</h2>
-        <div class="product-card">
-            <h3>Vitamins for Pets</h3>
-            <p>فيتامينات لتقوية المناعة</p>
-            <a href="https://wa.me/962792089871?text=مرحبا، بدي أطلب Vitamins for Pets من Paws & Claws" target="_blank">
-                اطلب الآن
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Paws & Claws - كفوف ومخالب</p>
-    </footer>
 </body>
 </html>
