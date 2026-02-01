@@ -1,95 +1,247 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Paws and Claws | كفوف و مخالب</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAWS AND CLAWS - Shop</title>
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(135deg, #FFC0CB, #FFD6E0);
+      --secondary-color: #fff;
+      --text-color: #333;
+      --button-hover: #ffb6c1;
+      --card-shadow: rgba(0, 0, 0, 0.15);
+    }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: var(--primary-gradient);
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px var(--card-shadow);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .category {
+      background: #fff;
+      padding: 12px 25px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px var(--card-shadow);
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .category:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px var(--card-shadow);
+    }
+
+    /* Products Grid */
+    .products {
+      display: none;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .products.active {
+      display: grid;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px var(--card-shadow);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--card-shadow);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product h2 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+    }
+
+    .product p {
+      margin: 0 0 15px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--primary-gradient);
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 -4px 6px var(--card-shadow);
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 0 12px;
+      padding: 12px 25px;
+      color: #fff;
+      background-color: #333;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .social-buttons a:hover {
+      background-color: var(--button-hover);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
 <body>
 
 <header>
-  <h1>Paws and Claws 🐾</h1>
-  <p>كفوف و مخالب – عمان، الأردن</p>
+  <h1>PAWS AND CLAWS</h1>
 </header>
 
-<!-- ===== Dry Cat Food ===== -->
-<section class="section">
-  <h2>🐱 دراي فود قطط</h2>
-  <div class="grid">
+<!-- Categories -->
+<section class="categories">
+  <div class="category" data-category="dogfood">Dog Food</div>
+  <div class="category" data-category="catfood">Cat Food</div>
+  <div class="category" data-category="toys">Toys</div>
+  <div class="category" data-category="accessories">Accessories</div>
+  <div class="category" data-category="care">Pet Care</div>
+</section>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Pro+Plan+Cat" alt="">
-      <h3>Pro Plan Cat Food</h3>
-      <p class="price">16.00 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Pro%20Plan%20Cat" target="_blank">اطلب واتساب</a>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Royal+Canin+Cat" alt="">
-      <h3>Royal Canin Cat</h3>
-      <p class="price">14.00 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Royal%20Canin%20Cat" target="_blank">اطلب واتساب</a>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Happy+Cat" alt="">
-      <h3>Happy Cat</h3>
-      <p class="price">12.00 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Happy%20Cat" target="_blank">اطلب واتساب</a>
-    </div>
-
+<!-- Products for each category -->
+<section class="products" id="dogfood">
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Dog+Food+1" alt="Dog Food 1">
+    <h2>Royal Canin Dog Adult</h2>
+    <p>JOD 35</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Dog+Food+2" alt="Dog Food 2">
+    <h2>Wanpy Chicken Jerky Dumbbells</h2>
+    <p>JOD 3</p>
   </div>
 </section>
 
-<!-- ===== Wet Cat Food ===== -->
-<section class="section">
-  <h2>🍖 طعام قطط رطب ومكافآت</h2>
-  <div class="grid">
-
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Whiskas" alt="">
-      <h3>Whiskas Wet Food</h3>
-      <p class="price">1.25 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Whiskas" target="_blank">اطلب واتساب</a>
-    </div>
-
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Gourmet" alt="">
-      <h3>Gourmet Cat Food</h3>
-      <p class="price">1.50 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Gourmet" target="_blank">اطلب واتساب</a>
-    </div>
-
+<section class="products" id="catfood">
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Cat+Food+1" alt="Cat Food 1">
+    <h2>PETBITE Adult Cat Food</h2>
+    <p>JOD 32</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Cat+Food+2" alt="Cat Food 2">
+    <h2>Friskies Prime Filets Chicken & Tuna</h2>
+    <p>JOD 1</p>
   </div>
 </section>
 
-<!-- ===== Dry Dog Food ===== -->
-<section class="section">
-  <h2>🐶 دراي فود كلاب</h2>
-  <div class="grid">
+<section class="products" id="toys">
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Toy+1" alt="Toy 1">
+    <h2>Dog Ball</h2>
+    <p>JOD 5</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Toy+2" alt="Toy 2">
+    <h2>Chew Toy</h2>
+    <p>JOD 8</p>
+  </div>
+</section>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Pro+Plan+Dog" alt="">
-      <h3>Pro Plan Dog</h3>
-      <p class="price">18.00 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Pro%20Plan%20Dog" target="_blank">اطلب واتساب</a>
-    </div>
+<section class="products" id="accessories">
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Collar" alt="Collar">
+    <h2>Dog Collar</h2>
+    <p>JOD 10</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Leash" alt="Leash">
+    <h2>Dog Leash</h2>
+    <p>JOD 12</p>
+  </div>
+</section>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x300?text=Royal+Canin+Dog" alt="">
-      <h3>Royal Canin Dog</h3>
-      <p class="price">17.00 JD</p>
-      <a href="https://wa.me/962792089871?text=طلب%20Royal%20Canin%20Dog" target="_blank">اطلب واتساب</a>
-    </div>
-
+<section class="products" id="care">
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Shampoo" alt="Shampoo">
+    <h2>Pet Shampoo</h2>
+    <p>JOD 7</p>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/220x220?text=Brush" alt="Brush">
+    <h2>Pet Brush</h2>
+    <p>JOD 9</p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Paws and Claws</p>
+  <div class="social-buttons">
+    <a href="https://instagram.com/pawsandclaws.jo" target="_blank">Instagram</a>
+    <a href="https://wa.me/962792089871" target="_blank">WhatsApp</a>
+  </div>
 </footer>
+
+<script>
+  const categories = document.querySelectorAll('.category');
+  const productsSections = document.querySelectorAll('.products');
+
+  categories.forEach(cat => {
+    cat.addEventListener('click', () => {
+      const target = cat.getAttribute('data-category');
+      productsSections.forEach(sec => {
+        if(sec.id === target){
+          sec.classList.toggle('active');
+        } else {
+          sec.classList.remove('active');
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll top
+    });
+  });
+</script>
 
 </body>
 </html>
-
