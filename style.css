@@ -1,92 +1,45 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff0f6;
-  color: #333;
-  text-align: center;
+.products-section {
+  padding: 20px;
 }
 
-/* ===== Header ===== */
-header {
-  background: #ffb6d9
-  color: #ffffff;
-  padding: 25px 10px;
+.products-section h2 {
+  color: #ff1493;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-.site-header {
-  text-align: center;
-}
-
-.logo {
-  width: 120px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-header p {
-  margin-top: 8px;
-  font-size: 18px;
-}
-
-/* ===== Categories ===== */
-.categories {
+.products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
-  padding: 30px;
 }
 
-.categories a {
+.product-card {
   background: white;
   border-radius: 12px;
-  padding: 20px;
-  text-decoration: none;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.price {
   color: #ff1493;
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
 }
 
-.categories a:hover {
-  background: #ffb6c1;
-  color: white;
-}
 
-/* ===== Contact ===== */
-.contact {
-  margin: 20px;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.whatsapp {
-  background: #25D366;
-}
-
-.instagram {
-  background: #E1306C;
-}
-
-/* ===== Footer ===== */
-footer {
-  margin-top: 30px;
-  padding: 15px;
-  background: #ffe4ec;
-  font-size: 14px;
-}
 
 
 
